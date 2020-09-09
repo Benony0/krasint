@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: "Geneva", "sans-serif";
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: normal;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+.btn {
+    appearance: none;
+    display: inline-block;
+    margin: 0;
+  
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  
+    color: inherit;
+    background-color: transparent;
+    text-decoration: none;
+  
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+/*
+Цвета:
+Самый светлый (активный пункт, текст лого): FCFCFC
+Неактивный пункт: C4C7CC
+фон меню (темно-синий): 191D36
+Фон кнопки: FFFEF9
+Текст кнопки: A1A3AF
+Текст активной кнопки: 11172D
+*/
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 6px;
+    background-color: #191D36;
+    color: #C4C7CC;
+}
+
+.menu__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content {
+    margin: 8px 0;
+}
+
+.main__btn {
+    margin-right: 8px;
+    padding: 6px 14px;
+    min-width: 100px;
+    color: #A1A3AF;
+    background-color: #FFFEF9;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: 0.25s ease-out;
+}
+
+.main__btn:hover {
+    border: 1px solid #FFFEF9;
+    color: #FFFEF9;
+    background-color: transparent;
+}
+
+.logo__wrap {
+    width: 20%;
+}
+
+.logo__link:hover {
+    color: #FCFCFC;
+}
+
+.menu__wrap {
+    width: 60%;
+}
+
+.main__btn_wrap {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo__text {
+    padding: 6px 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu__item_current {
+    color: #FCFCFC;
+    font-weight: bold;
+}
+
+.menu__item_link {
+    transition: 0.25s ease-out;
+}
+
+.menu__item_link:hover {
+    color: #FCFCFC;
+}
+
+.menu__item_text {
+    padding: 6px 14px;
+}
